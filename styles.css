@@ -1,0 +1,100 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00bcd4;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Seção de Categorias */
+.categoria {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #1f1f1f;
+}
+
+.categoria h2 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.filmes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.filme {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.filme img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.filme p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: #00bcd4;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
